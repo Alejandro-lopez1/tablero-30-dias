@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Datos del usuario (se generan solos, no se suben)
+estado.json
+plantilla.json
+historial/
+
+# Build del .exe (se distribuye por Releases)
+dist/
+build/
+*.spec
