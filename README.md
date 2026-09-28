@@ -57,3 +57,5 @@ Queda en `dist/Tablero30Dias.exe`. Requiere `pip install -r requirements.txt`.
 ├── abrir_tablero.bat / abrir_widget.bat
 └── README.md
 ```
+## Próximamente 
+Adaptación para distintos Sistemas Operativos, ya que esta versión es exclusiva para Windows. Posible App móvil. 
