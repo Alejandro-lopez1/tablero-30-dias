@@ -103,15 +103,15 @@ class TableroApp:
 
         stats = ttk.Frame(head)
         stats.pack(fill="x", pady=(8, 4))
-        self.lbl_done = ttk.Label(stats, font=("Segoe UI", 12, "bold"))
-        self.lbl_total = ttk.Label(stats, font=("Segoe UI", 12, "bold"))
-        self.lbl_pct = ttk.Label(stats, font=("Segoe UI", 12, "bold"))
-        for w, txt in ((self.lbl_done, "hechas"), (self.lbl_total, "totales"), (self.lbl_pct, "avance")):
+        nums = []
+        for txt in ("hechas", "totales", "avance"):
             box = ttk.Frame(stats, style="Card.TFrame", padding=8)
             box.pack(side="left", padx=(0, 8))
-            w.configure(background=PANEL)
-            w.pack()
-            ttk.Label(box, text=txt, style="MutedCard.TLabel").pack()
+            num = ttk.Label(box, style="Card.TLabel", font=("Segoe UI", 14, "bold"))
+            num.pack(anchor="w")
+            ttk.Label(box, text=txt, style="MutedCard.TLabel").pack(anchor="w")
+            nums.append(num)
+        self.lbl_done, self.lbl_total, self.lbl_pct = nums
 
         self.bar = ttk.Progressbar(head, mode="determinate", maximum=100)
         self.bar.pack(fill="x", pady=(6, 4))
