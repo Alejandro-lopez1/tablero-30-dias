@@ -1,6 +1,6 @@
 # Tablero 30 días — App de escritorio
 
-Tablero de 30 días para organizar la búsqueda de empleo IT, freelance y estudio de Data Engineering.
+Tablero de 30 días para organizar tu semana y no olvidar ningún pendiente.
 App de escritorio para Windows con Tkinter (solo librería estándar, sin dependencias para correrla).
 
 ## Funciones
